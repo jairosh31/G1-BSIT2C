@@ -1,0 +1,225 @@
+.booking-bg{
+  background-color:#5a7ab8;
+  background-image:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url('concert.png');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:#fff;
+}
+
+.booking-bg .container{
+  position:relative;
+  z-index:1;
+}
+
+/* Force page titles on dark background to stay white */
+.booking-bg .container h1,
+.booking-bg .container h2,
+.booking-bg .container h3,
+.booking-bg .container h4,
+.booking-bg .container h5,
+.booking-bg .container h6 {
+  color:#fff !important;
+}
+.booking-bg .text-white {
+  color:#fff !important;
+}
+
+/* Readable text on dark background – headings and body */
+.booking-bg,
+.booking-bg h1,
+.booking-bg h2,
+.booking-bg h3,
+.booking-bg h4,
+.booking-bg h5,
+.booking-bg h6,
+.booking-bg .offcanvas-title {
+  color:#fff !important;
+}
+
+/* Page titles in container (cards override below with dark text) */
+.booking-bg .container > * > h1,
+.booking-bg .container > * > h2,
+.booking-bg .container > * > h3,
+.booking-bg .container > * > h4,
+.booking-bg .container > * > h5,
+.booking-bg .container > * > h6 {
+  color:#fff !important;
+}
+
+.booking-bg .text-muted,
+.booking-bg small.text-muted {
+  color:#fff !important;
+}
+
+.booking-bg p,
+.booking-bg label:not(.form-check-label) {
+  color:#fff;
+}
+
+.booking-bg a:not(.btn):not(.nav-link):not(.alert-link) {
+  color:#fff;
+}
+.booking-bg a:not(.btn):not(.nav-link):not(.alert-link):hover {
+  color:#fff;
+  opacity:0.9;
+}
+
+/* Make links inside light cards/forms readable on white background */
+.booking-bg .auth-card a:not(.btn),
+.booking-bg .auth-card a:not(.btn):link,
+.booking-bg .auth-card a:not(.btn):visited,
+.booking-bg .booking-card a:not(.btn),
+.booking-bg .rating-card a:not(.btn),
+.booking-bg .card a:not(.btn) {
+  color:#0d6efd !important;
+}
+.booking-bg .auth-card a:not(.btn):hover,
+.booking-bg .auth-card a:not(.btn):active,
+.booking-bg .auth-card a:not(.btn):focus,
+.booking-bg .booking-card a:not(.btn):hover,
+.booking-bg .rating-card a:not(.btn):hover,
+.booking-bg .card a:not(.btn):hover {
+  color:#0a58ca !important;
+  text-decoration:underline;
+}
+
+/* Glassmorphism for all cards, forms and containers */
+.booking-bg .card,
+.booking-bg .card-body,
+.booking-bg .auth-card,
+.booking-bg .booking-card,
+.booking-bg .rating-card,
+.booking-bg .dashboard-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(15px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  --bs-card-bg: transparent !important; /* Override Bootstrap variable */
+}
+
+/* Ensure ALL text inside cards is white and visible */
+.booking-bg .card *,
+.booking-bg .auth-card *,
+.booking-bg .booking-card *,
+.booking-bg .rating-card *,
+.booking-bg .dashboard-card * {
+  color: #ffffff !important;
+}
+
+/* Specifically target muted text to be readable but slightly faded */
+.booking-bg .card .text-muted,
+.booking-bg .card small,
+.booking-bg .card .small {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Dashboard: light list rows need dark text for contrast */
+.booking-bg .concert-list .list-group-item {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+.booking-bg .concert-list .list-group-item,
+.booking-bg .concert-list .list-group-item *,
+.booking-bg .concert-list .list-group-item .fw-semibold,
+.booking-bg .concert-list .list-group-item .small,
+.booking-bg .concert-list .list-group-item .text-muted {
+  color: #1f2937 !important;
+}
+
+
+.booking-bg .alert {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* Tables: semi-transparent background */
+.booking-bg .table-responsive .table,
+.booking-bg .table {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  backdrop-filter: blur(10px);
+  /* Override Bootstrap table CSS variables at source */
+  --bs-table-color: #111827 !important;
+  --bs-table-bg: rgba(255, 255, 255, 0.92) !important;
+  --bs-table-striped-color: #111827 !important;
+  --bs-table-striped-bg: rgba(248, 250, 252, 0.95) !important;
+  --bs-table-active-color: #111827 !important;
+  --bs-table-active-bg: rgba(241, 245, 249, 0.96) !important;
+  --bs-table-hover-color: #111827 !important;
+  --bs-table-hover-bg: rgba(241, 245, 249, 0.98) !important;
+}
+.booking-bg .table th,
+.booking-bg .table td {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.booking-bg .table thead th {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+  --bs-table-bg: rgba(255, 255, 255, 0.15) !important;
+  --bs-table-color: #ffffff !important;
+}
+
+/* Admin tables: dark text on light data rows */
+.booking-bg .table tbody tr {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.booking-bg .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+}
+.booking-bg .table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+.booking-bg .table tbody td,
+.booking-bg .table tbody th,
+.booking-bg .table tbody td *,
+.booking-bg .table tbody th * {
+  color: #1f2937 !important;
+}
+
+/* Force readability even when table is inside a .card with white-text rules */
+.booking-bg .card .table tbody td,
+.booking-bg .card .table tbody th,
+.booking-bg .card .table tbody td *,
+.booking-bg .card .table tbody th *,
+.booking-bg .table.table-striped tbody td,
+.booking-bg .table.table-striped tbody th,
+.booking-bg .table.table-hover tbody td,
+.booking-bg .table.table-hover tbody th {
+  color: #111827 !important;
+}
+
+/* Final fallback: force readable black text in main content area */
+.booking-bg .booking-main,
+.booking-bg .booking-main h1,
+.booking-bg .booking-main h2,
+.booking-bg .booking-main h3,
+.booking-bg .booking-main h4,
+.booking-bg .booking-main h5,
+.booking-bg .booking-main h6,
+.booking-bg .booking-main p,
+.booking-bg .booking-main span,
+.booking-bg .booking-main small,
+.booking-bg .booking-main div,
+.booking-bg .booking-main td,
+.booking-bg .booking-main th,
+.booking-bg .booking-main li,
+.booking-bg .booking-main label {
+  color: #000 !important;
+}
+
+/* Keep interactive/status elements readable with their own colors */
+.booking-bg .booking-main .btn,
+.booking-bg .booking-main .badge,
+.booking-bg .booking-main .alert,
+.booking-bg .booking-main .nav-link {
+  color: inherit !important;
+}
+
+
